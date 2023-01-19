@@ -47,8 +47,8 @@ if (testScore >= 90) {
 
 // console.log(grade);
 
-let playerOne;
-let computer;
+let playerOne = "rock";
+let computer = "scissors";
 
 if (playerOne === computer) {
   // tie game!
@@ -72,7 +72,7 @@ if (playerOne === computer) {
   }
 }
 
-switch (Math.floor(Math.random() * 3 + 1)) {
+switch (Math.floor(Math.random() * 5 + 1)) {
   case 1:
     console.log(1);
     break;
@@ -84,5 +84,34 @@ switch (Math.floor(Math.random() * 3 + 1)) {
     break;
 
   default:
+    console.log("No match");
+    break;
+}
+
+switch (playerOne) {
+  case computer:
+    console.log("tie game");
+    break;
+  case "rock":
+    if (computer == "paper") {
+      console.log("computer wins");
+    } else {
+      console.log("playerOne wins");
+    }
+    break;
+  case "paper":
+    if (computer == "scissors") {
+      console.log("computer wins");
+    } else {
+      console.log("playerOne wins");
+    }
+    break;
+
+  default:
+    if (computer == "rock") {
+      console.log("computer wins");
+    } else {
+      console.log("playerOne wins");
+    }
     break;
 }
