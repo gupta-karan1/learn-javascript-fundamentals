@@ -115,3 +115,31 @@ switch (playerOne) {
     }
     break;
 }
+
+// ternary operator
+// syntax
+// condition ? result if true : result if false
+
+soup = "";
+let response = soup ? "Yes we have soup" : "Sorry no soup";
+console.log(response);
+
+let isCustomerBanned = false;
+let soupAccess = isCustomerBanned
+  ? "Sorry no soup for you"
+  : soup
+  ? `yes we have ${soup}`
+  : "Sorry no soup today";
+console.log(soupAccess);
+
+let myGrade =
+  testScore > 89
+    ? "A"
+    : testScore > 79
+    ? "B"
+    : testScore > 69
+    ? "C"
+    : testScore > 59
+    ? "D"
+    : "F";
+console.log(myGrade);
