@@ -143,3 +143,19 @@ let myGrade =
     ? "D"
     : "F";
 console.log(myGrade);
+
+playerOne = "scissors";
+computer = "paper";
+
+let gameResult =
+  playerOne === computer
+    ? "tie game"
+    : playerOne === "rock" && computer === "paper"
+    ? "computer wins"
+    : playerOne === "paper" && computer === "scissors"
+    ? "computer wins"
+    : playerOne === "scissors" && computer === "rock"
+    ? "computer wins"
+    : "playerOne wins";
+
+console.log(gameResult);
